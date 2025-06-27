@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Profile Generator</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Dynamic Profile Generator</h1>
+    <div class="container">
+      <input type="text" id="name" placeholder="Enter your name" /><br />
+      <input type="number" id="age" placeholder="Enter your age" /><br />
+      <input
+        type="text"
+        id="profession"
+        placeholder="Enter your profession"
+      /><br />
+      <input
+        type="text"
+        id="location"
+        placeholder="Enter your location"
+      /><br />
+
+      <button onclick="generateProfile()">Generate Profile</button><br />
+      <button id="clearButton"  onclick="clearProfile()">Reset</button><br />
+      <div class="output" id="profileOutput"></div>
+    </div>
+    <footer>
+      <p>
+        &copy; <span id="year"></span>2025 made by West Matthew. All rights
+        reserved.
+      </p>
+    </footer>
+    <script src="./script.js">
+    </script>
+  </body>
+</html>
